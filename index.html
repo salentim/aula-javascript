@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/main.js"></script> 
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        
+        button {
+            background-color: rgb(7, 73, 148);
+            padding: 10px;
+            border-radius: 6px;
+            border: none;
+            color: white;
+        }
+
+        .text-sucesso {
+            color: green;
+        }
+        
+        .text-atencao {
+            color: darkorange;
+        }
+
+        .text-erro {
+            color: darkred;
+        }
+
+    </style>
+    <title>Minha Página</title>
+</head>
+<body onload="load()">
+    <h1>Abrir Alerta</h1>
+    <button onclick="click1()">Clique Aqui</button>
+    <h1>Retornar Texto</h1>
+    <button onclick="click2()">Clique Aqui</button>
+    <p id="sucesso" class="text-sucesso"></p>
+    <h1>Link Nova Aba</h1>
+    <button onclick="click3()">Visitar Site 1</button>
+    <h1>Link Mesma Aba</h1>
+    <button onclick="click4()">Visitar Site 2</button>
+    <h1>Muda Texto</h1>
+    <button onmouseover="overTexto1(this)" onmouseout="overTexto2(this)">valor</button>
+    <button onmouseover="overTexto1(this)" onmouseout="overTexto2(this)">valor</button>
+    <h1>On Change</h1>
+    <select onchange="registraValor(this)">
+        <option value="1">Masculino</option>
+        <option value="2">Feminino</option>
+        <option value="3">Outros</option>
+    </select>
+</body>
+</html>
